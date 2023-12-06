@@ -10,6 +10,7 @@ MutantStack<T>::MutantStack(MutantStack const &copy) {
 	*this = copy;
 }
 
+//this->c is the underlying container of type T
 template <typename T>
 MutantStack<T> &MutantStack<T>::operator=(MutantStack const &rhs) {
 	if (this != &rhs) {
